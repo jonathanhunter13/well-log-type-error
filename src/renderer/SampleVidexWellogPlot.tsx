@@ -1,5 +1,5 @@
-import { useRef } from "react";
 import { LogViewer, ScaleTrack, StackedTrack } from "@equinor/videx-wellog";
+import { useRef } from "react";
 import "@equinor/videx-wellog/dist/styles/styles.css";
 
 const ex5 = async () => {
@@ -34,12 +34,9 @@ export const SampleVidexWellogPlot = () => {
   }
 
   return (
-    <div ref={initializePlot} style={{ width: "500px", height: "500px" }} />
+    <div
+      ref={initializePlot}
+      style={{ width: "500px", maxHeight: "500px", border: "1px solid grey" }}
+    />
   );
 };
-
-function App() {
-  return <SampleVidexWellogPlot />;
-}
-
-export default App;
