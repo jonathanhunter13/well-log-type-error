@@ -1,4 +1,8 @@
-import { LogViewer, ScaleTrack, StackedTrack } from "@equinor/videx-wellog";
+import {
+  LogViewer,
+  ScaleTrack,
+  StackedTrack,
+} from "@equinor/videx-wellog/dist/index.esm";
 import { useRef } from "react";
 import "@equinor/videx-wellog/dist/styles/styles.css";
 
